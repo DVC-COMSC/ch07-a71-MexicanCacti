@@ -9,7 +9,7 @@ for i in range(len(numbers)):
     sum += numbers[i]
 avg = sum/len(numbers)
 for i in range(len(numbers)):
-    numbers[i] = avg - numbers[i]
+    numbers[i] = abs(avg - numbers[i])
     print (f'{numbers[i]:.2f}', end=' ')
 
 
